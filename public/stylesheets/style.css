@@ -1,0 +1,44 @@
+.non-cross {
+  /* border: 1px solid blueviolet */
+  background-color: blueviolet;
+}
+
+section, img {
+  height: calc(100vh/6);
+}
+
+.cross-img-vertical {
+  transform: rotate(90deg);
+ 
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+
+.timer {
+  font-size: 25px;
+  background-color: coral;
+  width: fit-content;
+  height: fit-content;
+  padding: 1em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 9999;
+}
+
+.non-timer {
+  visibility: hidden;
+}
